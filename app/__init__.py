@@ -11,7 +11,8 @@ migrate = Migrate()
 def create_app():
     app = Flask(__name__)
     load_dotenv()
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(os.path.dirname(__file__), 'grants.db')
+    # Use absolute path for Render
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////opt/render/project/src/grants.db'
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'ee16580264f049f9a8dcb69a16761f79')
     
