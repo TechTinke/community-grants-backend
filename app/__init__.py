@@ -13,7 +13,7 @@ def create_app():
     load_dotenv()
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(os.path.dirname(__file__), 'grants.db')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'da102ec6596c7e3be737e3fcfea3d5e1fc4e0c6958f95ae4')
+    app.config['SECRET_KEY'] = os.getenv('SECRET_KEY', 'ee16580264f049f9a8dcb69a16761f79')
     
     db.init_app(app)
     migrate.init_app(app, db)
