@@ -19,6 +19,9 @@ def create_app():
     migrate.init_app(app, db)
     CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "https://*.vercel.app"]}})
     
+    with app.app_context():
+        db.create_all()
+    
     from . import models
     from .routes import bp as routes_bp
     app.register_blueprint(routes_bp)
