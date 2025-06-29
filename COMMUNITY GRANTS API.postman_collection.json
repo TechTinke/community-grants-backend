@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "361add39-4709-4e38-8ace-e9c59a6956df",
+		"name": "COMMUNITY GRANTS API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43188140",
+		"_collection_link": "https://www.postman.com/research-cosmologist-85500387/workspace/pizzaapi/collection/43188140-361add39-4709-4e38-8ace-e9c59a6956df?action=share&source=collection_link&creator=43188140"
+	},
+	"item": [
+		{
+			"name": "Get All Applications",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://community-grants-backend.onrender.com/applications",
+					"protocol": "https",
+					"host": [
+						"community-grants-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"applications"
+					]
+				},
+				"description": "Purpose is to Get All Applications."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Applications For Particular Grant",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://community-grants-backend.onrender.com/applications?grant_id=2",
+					"protocol": "https",
+					"host": [
+						"community-grants-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"applications"
+					],
+					"query": [
+						{
+							"key": "grant_id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Purpose is to Get Applications For a Particular Grant"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Feedback",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://community-grants-backend.onrender.com/feedback",
+					"protocol": "https",
+					"host": [
+						"community-grants-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"feedback"
+					]
+				},
+				"description": "Purpose is to Get All Feedback."
+			},
+			"response": []
+		},
+		{
+			"name": "Get Feedback by Grant",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://community-grants-backend.onrender.com/feedback?grant_id=2",
+					"protocol": "https",
+					"host": [
+						"community-grants-backend",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"feedback"
+					],
+					"query": [
+						{
+							"key": "grant_id",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Purpose is to Get Feedback by Grant."
+			},
+			"response": []
+		}
+	]
+}
