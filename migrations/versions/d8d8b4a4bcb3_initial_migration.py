@@ -1,8 +1,8 @@
-"""Create grants, applications, feedback tables
+"""Initial migration
 
-Revision ID: c44cc2da2102
+Revision ID: d8d8b4a4bcb3
 Revises: 
-Create Date: 2025-06-27 00:03:48.779318
+Create Date: 2025-06-29 22:47:59.822574
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'c44cc2da2102'
+revision = 'd8d8b4a4bcb3'
 down_revision = None
 branch_labels = None
 depends_on = None

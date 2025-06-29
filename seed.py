@@ -28,14 +28,14 @@ try:
         app1 = Application(
             grant_id=grant1.id,
             applicant_name='Oscar Maingi',
-            applicant_email='oscar@example.com',
+            applicant_email='oscar@gmail.com',
             proposal='Green park initiative',
             status='pending'
         )
         app2 = Application(
             grant_id=grant2.id,
             applicant_name='Anne Yula',
-            applicant_email='anne@example.com',
+            applicant_email='anne@gmail.com',
             proposal='Art festival',
             status='approved'
         )
@@ -46,14 +46,14 @@ try:
         feedback1 = Feedback(
             grant_id=grant1.id,
             commenter_name='Oscar Maingi',
-            commenter_email='oscar@example.com',
+            commenter_email='oscar@gmail.com',
             comment='Great initiative!',
             rating=5
         )
         feedback2 = Feedback(
             grant_id=grant1.id,
             commenter_name='Anne Yula',
-            commenter_email='anne@example.com',
+            commenter_email='anne@gmail.com',
             comment='Needs clearer guidelines',
             rating=3
         )
